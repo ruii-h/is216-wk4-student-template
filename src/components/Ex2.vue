@@ -1,16 +1,20 @@
 <script setup>
     import { ref } from 'vue'
     const me = ref('/assets/me.png')
-
-    const x = ref(200)
+    const width = ref(200)
+    const height = ref(200)
     // Add code here
+    const obj = ref({
+        width: '200',
+        height: '200',
+        src: '/assets/me.png'
+    })
 
 </script>
 
 <template>
 
     <!-- Add code here -->
-   <div>
-        <img v-bind:src='me'><hr>
-   </div>
+        <img v-bind:src='me' :width='wdith' :height='height' />
+        <img v-bind='obj' />
 </template>

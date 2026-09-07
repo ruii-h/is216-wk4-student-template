@@ -20,7 +20,7 @@
     </div>
     <div v-else>
         <label>Email</label>
-        <input type="email" placeholder="Enter your email">
+        <input placeholder="Enter your email">
     </div>
 </template>
 
